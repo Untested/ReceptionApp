@@ -1,7 +1,6 @@
 *.log
 .grunt
 node_modules
-public
 .idea
 .sass-cache
 .sass-cache*
