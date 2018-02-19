@@ -6,6 +6,10 @@ var autoprefixer = require('gulp-autoprefixer');
 var sassdoc = require('sassdoc');
 
 // Source and Destination Folders
+var imgInput = './src/img/*.*';
+var imgOutput = './public/img';
+var htmlInput = './src/*.html';
+var htmlOutput = './public';
 var es6Input = './src/js/*.js';
 var es6Output = './public/js';
 var sassInput = './src/css/*.scss';
@@ -22,6 +26,20 @@ var sassdocOptions = {
 var autoprefixerOptions = {
 	browsers: ['> 1%', 'last 2 versions', 'firefox >= 4', 'safari 7', 'safari 8', 'IE 8', 'IE 9', 'IE 10', 'IE 11']
 };
+
+// Task: Copy HTML Files to Public Folder
+gulp.task('html', function () {
+	return gulp
+		.src(htmlInput)
+		.pipe(gulp.dest(htmlOutput));
+});
+
+// Task: Copy IMG Files to Public Folder
+gulp.task('img', function () {
+	return gulp
+		.src(imgInput)
+		.pipe(gulp.dest(imgOutput));
+});
 
 // Task: SASS Doc
 gulp.task('sass-doc', function () {
@@ -63,12 +81,30 @@ gulp.task('es6', function () {
 		.pipe(gulp.dest(es6Output));
 });
 
-// Task: SASS Watch
+// Task: ES6 Watch
 gulp.task('es6-watch', function () {
 	return gulp
 		.watch(es6Input, ['es6']) // Watch Source Folder for Change, If So Run ES6 Task
 		.on('change', function (event) { // Log a Message When There is a Change
 			console.log('ES6 File: ' + event.path + ' [' + event.type + '] [Gulp Task]');
+		});
+});
+
+// Task: HTML Watch
+gulp.task('html-watch', function () {
+	return gulp
+		.watch(htmlInput, ['html']) // Watch Source Folder for Change, If So Run HTML Task
+		.on('change', function (event) { // Log a Message When There is a Change
+			console.log('HTML File: ' + event.path + ' [' + event.type + '] [Gulp Task]');
+		});
+});
+
+// Task: IMG Watch
+gulp.task('img-watch', function () {
+	return gulp
+		.watch(imgInput, ['img']) // Watch Source Folder for Change, If So Run IMG Task
+		.on('change', function (event) { // Log a Message When There is a Change
+			console.log('IMG File: ' + event.path + ' [' + event.type + '] [Gulp Task]');
 		});
 });
 

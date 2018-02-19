@@ -37,10 +37,18 @@ var App = function () {
 			// L = Dekstop
 			// X = TV
 			if (this.state.window) {
-				if (this.state.window.width <= 767) {
+				var width = this.state.window.width;
+				var height = this.state.window.height;
+
+				// We Use If-Immediate Over Switch-Immediate as it's Faster
+				if (width <= 767) {
 					return 'S';
-				} else {
+				} else if (width >= 768 && width <= 1024) {
+					return 'M';
+				} else if (width >= 1025) {
 					return 'L';
+				} else if (width == 1920 && height == 1080) {
+					return 'X';
 				}
 			}
 		}

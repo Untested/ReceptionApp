@@ -53,3 +53,21 @@ The app uses NPM package manager, Gulp as its task runner so it's easier to comp
 ## The App Status
 
 I have only been able to design the app structure, UI and UX as well as the least possible for the development due not having enough time, otherwise I would have finished it. As you can see there are a lot of things to think about from the development prospective and I already know what I need to do as per my instructions above.
+
+## Requirements
+
+In order to run this app on your local machine, you need to install the followings:
+
+- http://nodejs.org, Download and Install Node JS
+- npm i -g gulp
+- npm i -g http-server
+
+## Run the App
+
+- npm install
+- npm run setup (To Setup/Copy IMG & HTML Files to Public Folder)
+- npm run start (For Development)
+- npm run build (For Production)
+
+
+Thank you :-)

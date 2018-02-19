@@ -4,9 +4,10 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"dev": "gulp es6-watch sass-watch",
-		"prod": "gulp es6 sass",
-		"server": "./node_modules/http-server/bin/http-server -a localhost -p 8000 -c-1",
+		"setup": "gulp es6 sass html img",
+		"dev": "gulp es6-watch sass-watch html-watch img-watch",
+		"build": "gulp es6 sass html img",
+		"server": "http-server -a localhost -p 8000 -c-1",
 		"start": "npm run dev & npm run server",
 		"test": "npm-run-all -p -r webdriver-start http-server protractor"
 	},
