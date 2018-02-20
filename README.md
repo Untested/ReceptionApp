@@ -54,6 +54,8 @@ The app uses NPM package manager, Gulp as its task runner so it's easier to comp
 
 I have only been able to design the app structure, UI and UX as well as the least possible for the development due not having enough time, otherwise I would have finished it. As you can see there are a lot of things to think about from the development prospective and I already know what I need to do as per my instructions above.
 
+I have manged to code the Home screen, which works from mobile to TV resolution.
+
 ## Requirements
 
 In order to run this app on your local machine, you need to install the followings:
