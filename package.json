@@ -2,13 +2,11 @@
 	"name": "receptionapp",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
+	"main": "",
 	"scripts": {
-		"setup": "gulp es6 sass html img",
-		"dev": "gulp es6-watch sass-watch html-watch img-watch",
-		"build": "gulp es6 sass html img",
 		"server": "http-server -a localhost -p 8000 -c-1",
-		"start": "npm run dev & npm run server",
+		"dev": "gulp dev",
+		"prod": "gulp prod",
 		"test": "npm-run-all -p -r webdriver-start http-server protractor"
 	},
 	"repository": {

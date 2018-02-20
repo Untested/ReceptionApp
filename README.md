@@ -1,3 +1,5 @@
+Demo: https://untested.github.io/ReceptionApp/public/
+
 # UI/UX Approach 
 
 According to the requirements, what would be most useful information to Euromoney's both visitors and employees are as follows:
@@ -66,10 +68,18 @@ In order to run this app on your local machine, you need to install the followin
 
 ## Run the App
 
-- npm install
-- npm run setup (To Setup/Copy IMG & HTML Files to Public Folder)
-- npm run start (For Development)
-- npm run build (For Production)
+You can run this by simply opening the "./public/index.html" in your web browser, alternativetly a live demo is also available at https://untested.github.io/ReceptionApp/public/
 
+Or follow the commands below, simply run the following commands in your first terminal:
+
+- npm install
+- npm run dev (For Development)
+- npm run prod (For Production)
+
+And in your second terminal run this command:
+
+- npm run server
+
+The purpose of running a server was so that I could fetch some data from Firebase but because I didn't manage to finish off the rest of the app therefore there is no need for this. I only set it up at the beginning of the project so once I get to calling and fetching some data, I would run into problems.
 
 Thank you :-)
