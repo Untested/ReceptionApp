@@ -58,19 +58,17 @@ I have only been able to design the app structure, UI and UX as well as the leas
 
 I have manged to code the Home screen, which works from mobile to TV resolution.
 
-## Requirements
+## Run the App
 
-In order to run this app on your local machine, you need to install the followings:
+You can run this by simply opening the "./public/index.html" in your web browser, alternativetly a live demo is also available at https://untested.github.io/ReceptionApp/public/
+
+Or install and run the following commands:
 
 - http://nodejs.org, Download and Install Node JS
 - npm i -g gulp
 - npm i -g http-server
 
-## Run the App
-
-You can run this by simply opening the "./public/index.html" in your web browser, alternativetly a live demo is also available at https://untested.github.io/ReceptionApp/public/
-
-Or follow the commands below, simply run the following commands in your first terminal:
+Once everything installed properly, simply run the following commands in your first terminal.
 
 - npm install
 - npm run dev (For Development)
@@ -80,6 +78,6 @@ And in your second terminal run this command:
 
 - npm run server
 
-The purpose of running a server was so that I could fetch some data from Firebase but because I didn't manage to finish off the rest of the app therefore there is no need for this. I only set it up at the beginning of the project so once I get to calling and fetching some data, I would run into problems.
+The purpose of running a server was so that I could fetch some data from Firebase but because I didn't manage to finish off the rest of the app therefore there is no need for this. I only set it up at the beginning of the project so once I get to calling and fetching some data, I wouldn't run into problems.
 
 Thank you :-)
